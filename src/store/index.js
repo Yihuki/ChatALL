@@ -42,8 +42,10 @@ export default createStore({
     },
     cohereApi: {
       apiKey: "",
-      temperature: 0.8,
+      temperature: 0.9,
       pastRounds: 5,
+      topK: 1,
+      topP: 1,
     },
     openaiApi: {
       apiKey: "",
