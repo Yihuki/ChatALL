@@ -132,7 +132,7 @@
     "autoRefreshPrompt": "如果没有被要求频繁登录，不需要启用此功能",
     "notice": "只有付费的 Plus 用户才能使用 GPT-4",
     "text-davinci-002-render-sha": "GPT-3.5",
-    "gpt-4": "GPT-4",
+    "gpt-4": "GPT-4-turbo-preview",
     "gpt-4-browsing": "Web 浏览",
     "gpt-4-mobile": "GPT-4 移动版V2"
   },
@@ -142,13 +142,30 @@
     "topK": "topK",
     "topKPrompt": "topK为1意味着选定的标记在模型词汇中所有标记里是最有可能的（也称为贪婪解码）",
     "topP": "topP",
-    "topPPrompt": "从最可能到最不可能的标记被选出，直到它们的概率总和等于topP值"
+    "topPPrompt": "从最可能到最不可能的标记被选出，直到它们的概率总和等于topP值",
+    "gemini-10-pro-latest": "gemini-pro-1.0-latest"
   },
   "claudeAi": {
     "name": "Claude 2"
   },
   "ernie": {
     "name": "文心一言"
+  },
+  "qwen": {
+    "name": "通义千问",
+    "qwen-max": "qwen-max"
+  },
+  "Qwen": {
+    "apiKey": "API 密钥",
+    "temperature": "Temperature"
+  },
+  "minimax": {
+    "name": "Minimax",
+    "abab6-chat": "abab6"
+  },
+  "Minimax": {
+    "apiKey": "API 密钥",
+    "GroupId": "Group分组Id"
   },
   "huggingChat": {
     "name": "HuggingChat",
@@ -213,9 +230,6 @@
     "code_llama_34b_instruct": "Code-Llama-34b",
     "acouchy": "Google-PaLM-2",
     "llama_2_70b_chat": "Llama-2-70b"
-  },
-  "qianWen": {
-    "name": "通义千问"
   },
   "skyWork": {
     "name": "天工"
