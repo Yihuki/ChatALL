@@ -29,10 +29,10 @@ export default createStore({
     columns: 2,
     gemini: {
       apiKey: "",
-      temperature: 0.7,
+      temperature: 0.9,
       pastRounds: 5,
-      topK: 16,
-      topP: 0.95,
+      topK: 1,
+      topP: 1,
     },
     openaiApi: {
       apiKey: "",
