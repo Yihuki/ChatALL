@@ -193,10 +193,6 @@ const bots = ref([
     bypassList: "*.poe.com",
   },
   {
-    name: i18n.global.t("qianWen.name"),
-    bypassList: "*.aliyun.com",
-  },
-  {
     name: i18n.global.t("skyWork.name"),
     bypassList: "*.tiangong.cn",
   },
@@ -211,6 +207,14 @@ const bots = ref([
   {
     name: i18n.global.t("proxy.googleService"),
     bypassList: "*.google.com",
+  },
+  {
+    name: i18n.global.t("qwen.name"),
+    bypassList: "*.aliyuncs.com",
+  },
+  {
+    name: i18n.global.t("minimax.name"),
+    bypassList: "*.minimax.chat",
   },
 ]);
 const botsProxy = ref([]);

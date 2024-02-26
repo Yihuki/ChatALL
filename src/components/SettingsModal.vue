@@ -99,31 +99,10 @@ import ProxySettings from "@/components/ProxySetting.vue";
 import ChatSettings from "@/components/ChatSetting.vue";
 import CommonBotSettings from "@/components/BotSettings/CommonBotSettings.vue";
 
-import ChatGPTBotSettings from "@/components/BotSettings/ChatGPTBotSettings.vue";
 import OpenAIAPIBotSettings from "@/components/BotSettings/OpenAIAPIBotSettings.vue";
 import GeminiBotSettings from "@/components/BotSettings/GeminiBotSettings.vue";
-import AzureOpenAIAPIBotSettings from "./BotSettings/AzureOpenAIAPIBotSettings.vue";
-import BingChatBotSettings from "@/components/BotSettings/BingChatBotSettings.vue";
-import SparkBotSettings from "./BotSettings/SparkBotSettings.vue";
-import BardBotSettings from "@/components/BotSettings/BardBotSettings.vue";
-import MOSSBotSettings from "@/components/BotSettings/MOSSBotSettings.vue";
-import WenxinQianfanBotSettings from "@/components/BotSettings/WenxinQianfanBotSettings.vue";
-import GradioAppBotSettings from "@/components/BotSettings/GradioAppBotSettings.vue";
-import Falcon180bBotSettings from "@/components/BotSettings/Falcon180bBotSettings.vue";
-import LMSYSBotSettings from "@/components/BotSettings/LMSYSBotSettings.vue";
-import HuggingChatBotSettings from "@/components/BotSettings/HuggingChatBotSettings.vue";
-import QianWenBotSettings from "@/components/BotSettings/QianWenBotSettings.vue";
-import PoeBotSettings from "@/components/BotSettings/PoeBotSettings.vue";
-import SkyWorkBotSettings from "@/components/BotSettings/SkyWorkBotSettings.vue";
-import YouChatBotSettings from "@/components/BotSettings/YouChatBotSettings.vue";
-import PhindBotSettings from "@/components/BotSettings/PhindBotSettings.vue";
-import PiBotSettings from "@/components/BotSettings/PiBotSettings.vue";
-import Qihoo360AIBrainBotSettings from "./BotSettings/Qihoo360AIBrainBotSettings.vue";
-import OpenAssistantBotSettings from "./BotSettings/OpenAssistantBotSettings.vue";
-import CharacterAIBotSettings from "./BotSettings/CharacterAIBotSettings.vue";
-import ClaudeAIBotSettings from "./BotSettings/ClaudeAIBotSettings.vue";
-import ChatGLMBotSettings from "./BotSettings/ChatGLMBotSettings.vue";
-import KimiBotSettings from "./BotSettings/KimiBotSettings.vue";
+import QwenBotSettings from "@/components/BotSettings/QwenBotSettings.vue";
+import MinimaxBotSettings from "@/components/BotSettings/MinimaxBotSettings.vue";
 
 import { resolveTheme, applyTheme, Mode } from "../theme";
 
@@ -138,31 +117,10 @@ const emit = defineEmits(["update:open", "done"]);
 const tab = ref(null);
 
 const botSettings = [
-  { brand: "360AiBrain", component: Qihoo360AIBrainBotSettings },
-  { brand: "azureOpenaiApi", component: AzureOpenAIAPIBotSettings },
-  { brand: "bard", component: BardBotSettings },
-  { brand: "bingChat", component: BingChatBotSettings },
-  { brand: "characterAI", component: CharacterAIBotSettings },
-  { brand: "chatGpt", component: ChatGPTBotSettings },
-  { brand: "chatGlm", component: ChatGLMBotSettings },
-  { brand: "claudeAi", component: ClaudeAIBotSettings },
-  { brand: "falcon", component: Falcon180bBotSettings },
-  { brand: "gradio", component: GradioAppBotSettings },
-  { brand: "huggingChat", component: HuggingChatBotSettings },
-  { brand: "kimi", component: KimiBotSettings },
-  { brand: "lmsys", component: LMSYSBotSettings },
-  { brand: "moss", component: MOSSBotSettings },
   { brand: "openaiApi", component: OpenAIAPIBotSettings },
   { brand: "gemini", component: GeminiBotSettings },
-  { brand: "openAssistant", component: OpenAssistantBotSettings },
-  { brand: "phind", component: PhindBotSettings },
-  { brand: "pi", component: PiBotSettings },
-  { brand: "poe", component: PoeBotSettings },
-  { brand: "qianWen", component: QianWenBotSettings },
-  { brand: "skyWork", component: SkyWorkBotSettings },
-  { brand: "spark", component: SparkBotSettings },
-  { brand: "wenxinQianfan", component: WenxinQianfanBotSettings },
-  { brand: "youChat", component: YouChatBotSettings },
+  { brand: "qwen", component: QwenBotSettings },
+  { brand: "minimax", component: MinimaxBotSettings },
 ];
 
 const proxy = ProxySettings;

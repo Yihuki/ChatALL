@@ -2,12 +2,13 @@
   <CommonBotSettings
     :settings="settings"
     :brand-id="brandId"
-    mutation-type="setWenxinQianfan"
+    mutation-type="setMinimax"
+    :watcher="watcher"
   ></CommonBotSettings>
 </template>
 
 <script>
-import Bot from "@/bots/baidu/WenxinQianfanBot";
+import Bot from "@/bots/MinimaxBot";
 import CommonBotSettings from "@/components/BotSettings/CommonBotSettings.vue";
 import { Type } from "./settings.const";
 
@@ -15,17 +16,16 @@ const settings = [
   {
     type: Type.Text,
     name: "apiKey",
-    title: "API Key & Secret Key",
+    title: "Minimax.apiKey",
     description: "settings.secretPrompt",
-    label: "API Key",
-    placeholder: "2125NA8mQy7gC52Pq9BK3tvk",
-    hideDetails: true,
+    placeholder: "...",
   },
   {
     type: Type.Text,
-    name: "secretKey",
-    label: "Secret Key",
-    placeholder: "IWf2pyYm26fz8GgNAHdkPkznHgazlffQ",
+    name: "GroupId",
+    title: "Minimax.GroupId",
+    description: "settings.secretPrompt",
+    placeholder: "...",
   },
   {
     type: Type.Slider,
@@ -46,6 +46,11 @@ export default {
       settings: settings,
       brandId: Bot._brandId,
     };
+  },
+  methods: {
+    watcher() {
+      Bot.getInstance().setupModel();
+    },
   },
 };
 </script>

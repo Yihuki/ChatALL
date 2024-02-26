@@ -6,7 +6,7 @@ export default class GeminiBot extends LangChainBot {
   static _brandId = "gemini";
   static _className = "GeminiBot";
   static _logoFilename = "gemini-logo.png"; // Place it in public/bots/
-  static _model = "gemini-pro";
+  static _model = "gemini-1.0-pro-latest";
 
   constructor() {
     super();

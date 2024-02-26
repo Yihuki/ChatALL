@@ -94,6 +94,16 @@ export default createStore({
       topP: 0.9,
       repetitionPenalty: 1.2,
     },
+    qwen: {
+      temperature: 1,
+      apiKey: "",
+      pastRounds: 5,
+    },
+    minimax: {
+      GroupId: "",
+      apiKey: "",
+      pastRounds: 5,
+    },
     phind: {
       model: "Phind Model",
     },
