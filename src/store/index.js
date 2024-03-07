@@ -107,6 +107,13 @@ export default createStore({
     phind: {
       model: "Phind Model",
     },
+    xinghuo: {
+      apiKey: "",
+      appid: "",
+      apiSecret: "",
+      temperature: 0.5,
+      pastRounds: 5,
+    },
     currentChatIndex: 0,
     updateCounter: 0,
     theme: undefined,
