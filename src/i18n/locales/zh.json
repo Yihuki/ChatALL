@@ -167,6 +167,16 @@
     "apiKey": "API 密钥",
     "GroupId": "Group分组Id"
   },
+  "xinghuo": {
+    "name": "讯飞星火",
+    "spark-35": "讯飞星火v3.5",
+    "temperature": "Temperature"
+  },
+  "Xinghuo": {
+    "apiKey": "API Key",
+    "apiSecret": "API Secret",
+    "appid": "appid"
+  },
   "huggingChat": {
     "name": "HuggingChat",
     "codellamaCodeLlama-34b-Instruct-hf": "Code Llama",

@@ -5,6 +5,7 @@ import OpenAIAPI4Bot from "@/bots/openai/OpenAIAPI4Bot";
 import DevBot from "@/bots/DevBot";
 import QwenBot from "@/bots/QwenBot";
 import MinimaxBot from "@/bots/MinimaxBot";
+import XinghuoBot from "@/bots/XinghuoBot";
 
 const all = [
   OpenAIAPI35Bot.getInstance(),
@@ -12,6 +13,7 @@ const all = [
   GeminiBot.getInstance(),
   QwenBot.getInstance(),
   MinimaxBot.getInstance(),
+  XinghuoBot.getInstance(),
 ];
 
 const disabled = ["ClaudeBot", "AlpacaBot", "HuggingChatBot", "Falcon180bBot"];
@@ -42,6 +44,7 @@ export const botTags = {
     bots.getBotByClassName("GeminiBot"),
     bots.getBotByClassName("QwenBot"),
     bots.getBotByClassName("MinimaxBot"),
+    bots.getBotByClassName("XinghuoBot"),
   ],
   madeInChina: [],
 };
