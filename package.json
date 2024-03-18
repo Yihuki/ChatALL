@@ -1,6 +1,6 @@
 {
   "name": "chatall",
-  "version": "1.58.88",
+  "version": "1.63.95",
   "description": "Chat with multiple AI bots and discover the best.",
   "author": {
     "name": "Sun Zhigang",
@@ -37,7 +37,7 @@
     "core-js": "^3.35.0",
     "dexie": "^4.0.1-alpha.25",
     "dexie-export-import": "^4.0.7",
-    "electron-builder": "^24.9.1",
+    "electron-builder": "^24.13.3",
     "jszip": "^3.10.1",
     "katex": "^0.16.9",
     "langchain": "^0.1.4",
