@@ -114,6 +114,11 @@ export default createStore({
       temperature: 0.5,
       pastRounds: 5,
     },
+    zhipu: {
+      apiKey: "",
+      temperature: 0.95,
+      pastRounds: 5,
+    },
     currentChatIndex: 0,
     updateCounter: 0,
     theme: undefined,

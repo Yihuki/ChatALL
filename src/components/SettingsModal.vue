@@ -104,6 +104,7 @@ import GeminiBotSettings from "@/components/BotSettings/GeminiBotSettings.vue";
 import QwenBotSettings from "@/components/BotSettings/QwenBotSettings.vue";
 import MinimaxBotSettings from "@/components/BotSettings/MinimaxBotSettings.vue";
 import XinghuoBotSettings from "@/components/BotSettings/XinghuoBotSettings.vue";
+import ZhipuBotSettings from "@/components/BotSettings/ZhipuBotSettings.vue";
 
 import { resolveTheme, applyTheme, Mode } from "../theme";
 
@@ -123,6 +124,7 @@ const botSettings = [
   { brand: "qwen", component: QwenBotSettings },
   { brand: "minimax", component: MinimaxBotSettings },
   { brand: "xinghuo", component: XinghuoBotSettings },
+  { brand: "zhipu", component: ZhipuBotSettings },
 ];
 
 const proxy = ProxySettings;
