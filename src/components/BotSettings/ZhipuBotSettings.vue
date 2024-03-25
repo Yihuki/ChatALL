@@ -16,7 +16,7 @@ const settings = [
   {
     type: Type.Text,
     name: "apiKey",
-    title: "Zhipu.apikey",
+    title: "Zhipu.apiKey",
     description: "settings.secretPrompt",
     placeholder: "...",
   },

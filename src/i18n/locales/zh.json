@@ -175,9 +175,13 @@
     "temperature": "Temperature"
   },
   "Xinghuo": {
-    "apiKey": "API Key",
+    "apiKey": "API 密钥",
     "apiSecret": "API Secret",
     "appid": "appid"
+  },
+  "Zhipu":{
+    "apiKey": "API 密钥",
+    "name": "智谱清言"
   },
   "huggingChat": {
     "name": "HuggingChat",
@@ -253,6 +257,11 @@
   },
   "spark": {
     "name": "讯飞星火"
+  },
+  "zhipu": {
+    "name": "智谱清言",
+    "glm-4": "GLM-4",
+    "temperature": "Temperature"
   },
   "wenxinQianfan": {
     "name": "文心千帆",
