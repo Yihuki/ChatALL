@@ -27,12 +27,18 @@ export default createStore({
     uuid: "",
     lang: "auto",
     columns: 2,
-    gemini: {
+    geminiApi: {
       apiKey: "",
       temperature: 0.9,
       pastRounds: 5,
       topK: 1,
       topP: 1,
+    },
+    claudeApi: {
+      apiKey: "",
+      temperature: 0,
+      alterUrl: "",
+      maxTokens: 1000,
     },
     openaiApi: {
       apiKey: "",
@@ -55,6 +61,9 @@ export default createStore({
     gradio: {
       url: "",
       fnIndex: 0,
+    },
+    mistral: {
+      model: "mistral-large",
     },
     moss: {
       token: "",
@@ -84,6 +93,9 @@ export default createStore({
     },
     claudeAi: {
       org: "",
+    },
+    perplexity: {
+      version: "2.5",
     },
     poe: {
       formkey: "",
@@ -183,6 +195,12 @@ export default createStore({
         favBots,
       });
     },
+    async setFavoriteBot(state, favBots) {
+      const currentChat = await Chats.getCurrentChat();
+      Chats.table.update(currentChat.index, {
+        favBots,
+      });
+    },
     async removeFavoriteBot(state, botClassname) {
       const currentChat = await Chats.getCurrentChat();
       for (let i = 0; i < currentChat.favBots.length; i++) {
@@ -204,8 +222,8 @@ export default createStore({
     setChatgpt(state, refreshCycle) {
       state.chatgpt.refreshCycle = refreshCycle;
     },
-    setGemini(state, values) {
-      state.gemini = { ...state.gemini, ...values };
+    setGeminiApi(state, values) {
+      state.geminiApi = { ...state.geminiApi, ...values };
     },
     setOpenaiApi(state, values) {
       state.openaiApi = { ...state.openaiApi, ...values };
@@ -240,11 +258,20 @@ export default createStore({
     setClaudeAi(state, values) {
       state.claudeAi = { ...state.claudeAi, ...values };
     },
+    setClaudeApi(state, values) {
+      state.claudeApi = { ...state.claudeApi, ...values };
+    },
+    setPerplexity(state, values) {
+      state.perplexity = { ...state.perplexity, ...values };
+    },
     setPoe(state, values) {
       state.poe = { ...state.poe, ...values };
     },
     setPhind(state, values) {
       state.phind = { ...state.phind, ...values };
+    },
+    setMistral(state, values) {
+      state.mistral = { ...state.mistral, ...values };
     },
     setLatestPromptIndex(state, promptIndex) {
       Chats.table.update(state.currentChatIndex, {

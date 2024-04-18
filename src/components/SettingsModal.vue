@@ -107,6 +107,7 @@ import XinghuoBotSettings from "@/components/BotSettings/XinghuoBotSettings.vue"
 import ZhipuBotSettings from "@/components/BotSettings/ZhipuBotSettings.vue";
 
 import { resolveTheme, applyTheme, Mode } from "../theme";
+import ClaudeAPIBotSettings from "./BotSettings/ClaudeAPIBotSettings.vue";
 
 const { ipcRenderer } = window.require("electron");
 const { t: $t, locale } = useI18n();
@@ -125,6 +126,7 @@ const botSettings = [
   { brand: "minimax", component: MinimaxBotSettings },
   { brand: "xinghuo", component: XinghuoBotSettings },
   { brand: "zhipu", component: ZhipuBotSettings },
+  { brand: "claudeApi", component: ClaudeAPIBotSettings },
 ];
 
 const proxy = ProxySettings;

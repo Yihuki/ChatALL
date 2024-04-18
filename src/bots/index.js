@@ -1,5 +1,5 @@
 // Bots
-import GeminiBot from "@/bots/google/GeminiBot";
+import GeminiAPIBot from "@/bots/google/GeminiAPIBot";
 import OpenAIAPI35Bot from "@/bots/openai/OpenAIAPI35Bot";
 import OpenAIAPI4Bot from "@/bots/openai/OpenAIAPI4Bot";
 import DevBot from "@/bots/DevBot";
@@ -11,7 +11,7 @@ import ZhipuBot from "@/bots/ZhipuBot";
 const all = [
   OpenAIAPI35Bot.getInstance(),
   OpenAIAPI4Bot.getInstance(),
-  GeminiBot.getInstance(),
+  GeminiAPIBot.getInstance(),
   QwenBot.getInstance(),
   MinimaxBot.getInstance(),
   XinghuoBot.getInstance(),
@@ -53,7 +53,7 @@ export const botTags = {
   api: [
     bots.getBotByClassName("OpenAIAPI35Bot"),
     bots.getBotByClassName("OpenAIAPI4Bot"),
-    bots.getBotByClassName("GeminiBot"),
+    bots.getBotByClassName("GeminiAPIBot"),
     bots.getBotByClassName("QwenBot"),
     bots.getBotByClassName("MinimaxBot"),
     bots.getBotByClassName("XinghuoBot"),
