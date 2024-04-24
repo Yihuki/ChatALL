@@ -1,6 +1,6 @@
 {
   "name": "chatall",
-  "version": "1.71.100",
+  "version": "1.74.101",
   "description": "Chat with multiple AI bots and discover the best.",
   "author": {
     "name": "Sun Zhigang",
@@ -29,6 +29,7 @@
     "@langchain/anthropic": "^0.1.16",
     "@langchain/core": "^0.1.58",
     "@langchain/google-genai": "^0.0.7",
+    "@langchain/groq": "^0.0.6",
     "@langchain/openai": "^0.0.12",
     "@mdi/font": "^7.4.47",
     "@vueuse/rxjs": "^10.7.1",
