@@ -26,7 +26,8 @@
   },
   "dependencies": {
     "@kangc/v-md-editor": "^2.3.16",
-    "@langchain/anthropic": "^0.1.9",
+    "@langchain/anthropic": "^0.1.16",
+    "@langchain/core": "^0.1.58",
     "@langchain/google-genai": "^0.0.7",
     "@langchain/openai": "^0.0.12",
     "@mdi/font": "^7.4.47",
@@ -115,7 +116,6 @@
   ],
   "license": "Apache-2.0",
   "overrides": {
-    "@langchain/core": "~0.1.55",
     "vue-cli-plugin-electron-builder": {
       "electron-builder": "^24.0.0"
     }

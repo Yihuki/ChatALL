@@ -100,7 +100,7 @@ import ChatSettings from "@/components/ChatSetting.vue";
 import CommonBotSettings from "@/components/BotSettings/CommonBotSettings.vue";
 
 import OpenAIAPIBotSettings from "@/components/BotSettings/OpenAIAPIBotSettings.vue";
-import GeminiBotSettings from "@/components/BotSettings/GeminiBotSettings.vue";
+import GeminiAPIBotSettings from "@/components/BotSettings/GeminiAPIBotSettings.vue";
 import QwenBotSettings from "@/components/BotSettings/QwenBotSettings.vue";
 import MinimaxBotSettings from "@/components/BotSettings/MinimaxBotSettings.vue";
 import XinghuoBotSettings from "@/components/BotSettings/XinghuoBotSettings.vue";
@@ -121,7 +121,7 @@ const tab = ref(null);
 
 const botSettings = [
   { brand: "openaiApi", component: OpenAIAPIBotSettings },
-  { brand: "gemini", component: GeminiBotSettings },
+  { brand: "geminiApi", component: GeminiAPIBotSettings },
   { brand: "qwen", component: QwenBotSettings },
   { brand: "minimax", component: MinimaxBotSettings },
   { brand: "xinghuo", component: XinghuoBotSettings },
