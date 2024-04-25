@@ -134,3 +134,6 @@ src/i18n/locales/ko.json
 src/i18n/locales/ru.json
 src/i18n/locales/vi.json
 src/i18n/locales/zhtw.json
+
+#gitignore
+.gitignore
