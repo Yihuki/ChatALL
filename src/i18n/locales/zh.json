@@ -166,7 +166,7 @@
     "topKPrompt": "topK为1意味着选定的标记在模型词汇中所有标记里是最有可能的（也称为贪婪解码）",
     "topP": "topP",
     "topPPrompt": "从最可能到最不可能的标记被选出，直到它们的概率总和等于topP值",
-    "gemini-10-pro-latest": "gemini-pro-1.0-latest"
+    "gemini-15-pro-latest": "gemini-pro-1.5-latest"
   },
   "claudeAi": {
     "name": "Claude"
