@@ -15,7 +15,8 @@
     "light": "浅色",
     "dark": "深色",
     "bots": "AI 模型",
-    "api": "API"
+    "api": "API",
+    "showMenuBar": "显示菜单栏"
   },
   "header": {
     "clearMessages": "清空当前对话的所有消息？",
@@ -162,6 +163,7 @@
   "geminiApi": {
     "name": "Gemini API",
     "gemini-pro": "Gemini-Pro",
+    "gemini-15-pro-latest": "Gemini 1.5 Pro",
     "topK": "topK",
     "topKPrompt": "topK为1意味着选定的标记在模型词汇中所有标记里是最有可能的（也称为贪婪解码）",
     "topP": "topP",
