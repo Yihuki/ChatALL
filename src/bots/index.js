@@ -49,9 +49,6 @@ disabled.forEach((className) => {
 });
 
 export const botTags = {
-  free: [],
-  paid: [],
-  openSource: [],
   api: [
     bots.getBotByClassName("OpenAIAPI35Bot"),
     bots.getBotByClassName("OpenAIAPI4Bot"),
@@ -62,6 +59,5 @@ export const botTags = {
     bots.getBotByClassName("XinghuoBot"),
     bots.getBotByClassName("ZhipuBot"),
   ],
-  madeInChina: [],
 };
 export default bots;

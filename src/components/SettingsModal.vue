@@ -133,17 +133,8 @@ const proxy = ProxySettings;
 const chat = ChatSettings;
 const languages = computed(() => [
   { name: $t("settings.system"), code: "auto" },
-  { name: "Deutsch", code: "de" },
   { name: "English", code: "en" },
-  { name: "Español", code: "es" },
-  { name: "Français", code: "fr" },
-  { name: "Italiano", code: "it" },
-  { name: "日本語", code: "ja" },
-  { name: "한국어", code: "ko" },
-  { name: "Русский", code: "ru" },
-  { name: "Tiếng Việt", code: "vi" },
   { name: "简体中文", code: "zh" },
-  { name: "繁體中文", code: "zhtw" },
 ]);
 
 const modes = computed(() => [
