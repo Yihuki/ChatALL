@@ -2,6 +2,7 @@
 import GeminiAPIBot from "@/bots/google/GeminiAPIBot";
 import OpenAIAPI35Bot from "@/bots/openai/OpenAIAPI35Bot";
 import OpenAIAPI4Bot from "@/bots/openai/OpenAIAPI4Bot";
+import OpenAIAPI4oBot from "@/bots/openai/OpenAIAPI4oBot";
 import DevBot from "@/bots/DevBot";
 import QwenBot from "@/bots/QwenBot";
 import MinimaxBot from "@/bots/MinimaxBot";
@@ -11,6 +12,7 @@ import ZhipuBot from "@/bots/ZhipuBot";
 const all = [
   OpenAIAPI35Bot.getInstance(),
   OpenAIAPI4Bot.getInstance(),
+  OpenAIAPI4oBot.getInstance(),
   GeminiAPIBot.getInstance(),
   QwenBot.getInstance(),
   MinimaxBot.getInstance(),
@@ -53,6 +55,7 @@ export const botTags = {
   api: [
     bots.getBotByClassName("OpenAIAPI35Bot"),
     bots.getBotByClassName("OpenAIAPI4Bot"),
+    bots.getBotByClassName("OpenAIAPI4oBot"),
     bots.getBotByClassName("GeminiAPIBot"),
     bots.getBotByClassName("QwenBot"),
     bots.getBotByClassName("MinimaxBot"),
