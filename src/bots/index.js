@@ -8,11 +8,17 @@ import QwenBot from "@/bots/QwenBot";
 import MinimaxBot from "@/bots/MinimaxBot";
 import XinghuoBot from "@/bots/XinghuoBot";
 import ZhipuBot from "@/bots/ZhipuBot";
+import Claude3HaikuOpenAIAPIBot from "./claudeopenai/Claude3HaikuOpenAIAPIBot";
+import Claude3SonnetOpenAIAPIBot from "./claudeopenai/Claude3SonnetOpenAIAPIBot";
+import Claude3OpusOpenAIAPIBot from "./claudeopenai/Claude3OpusOpenAIAPIBot";
 
 const all = [
   OpenAIAPI35Bot.getInstance(),
   OpenAIAPI4Bot.getInstance(),
   OpenAIAPI4oBot.getInstance(),
+  Claude3HaikuOpenAIAPIBot.getInstance(),
+  Claude3SonnetOpenAIAPIBot.getInstance(),
+  Claude3OpusOpenAIAPIBot.getInstance(),
   GeminiAPIBot.getInstance(),
   QwenBot.getInstance(),
   MinimaxBot.getInstance(),
@@ -53,6 +59,9 @@ export const botTags = {
     bots.getBotByClassName("OpenAIAPI35Bot"),
     bots.getBotByClassName("OpenAIAPI4Bot"),
     bots.getBotByClassName("OpenAIAPI4oBot"),
+    bots.getBotByClassName("Claude3HaikuOpenAIAPIBot"),
+    bots.getBotByClassName("Claude3SonnetOpenAIAPIBot"),
+    bots.getBotByClassName("Claude3OpusOpenAIAPIBot"),
     bots.getBotByClassName("GeminiAPIBot"),
     bots.getBotByClassName("QwenBot"),
     bots.getBotByClassName("MinimaxBot"),
