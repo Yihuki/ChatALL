@@ -98,6 +98,12 @@ export default createStore({
       secretKey: "",
       pastRounds: 5,
     },
+    wenxin: {
+      apiKey: "",
+      secretKey: "",
+      pastRounds: 5,
+      temperature: 1,
+    },
     characterAI: {
       characterId: "YntB_ZeqRq2l_aVf2gWDCZl4oBttQzDvhj9cXafWcF8",
       version: "",
