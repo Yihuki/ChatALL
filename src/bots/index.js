@@ -13,8 +13,6 @@ import WenxinBot from "./WenxinBot";
 import Claude3HaikuOpenAIAPIBot from "./claudeopenai/Claude3HaikuOpenAIAPIBot";
 import Claude3SonnetOpenAIAPIBot from "./claudeopenai/Claude3SonnetOpenAIAPIBot";
 import Claude3OpusOpenAIAPIBot from "./claudeopenai/Claude3OpusOpenAIAPIBot";
-import Claude3OpusBot from "./lmsys/Claude3OpusBot";
-import Claude3SonnetBot from "./lmsys/Claude3SonnetBot";
 
 const all = [
   OpenAIAPI35Bot.getInstance(),
@@ -24,8 +22,6 @@ const all = [
   Claude3HaikuOpenAIAPIBot.getInstance(),
   Claude3SonnetOpenAIAPIBot.getInstance(),
   Claude3OpusOpenAIAPIBot.getInstance(),
-  Claude3SonnetBot.getInstance(),
-  Claude3OpusBot.getInstance(),
   GeminiAPIBot.getInstance(),
   QwenBot.getInstance(),
   MinimaxBot.getInstance(),
@@ -71,8 +67,6 @@ export const botTags = {
     bots.getBotByClassName("Claude3HaikuOpenAIAPIBot"),
     bots.getBotByClassName("Claude3SonnetOpenAIAPIBot"),
     bots.getBotByClassName("Claude3OpusOpenAIAPIBot"),
-    bots.getBotByClassName("Claude3SonnetBot"),
-    bots.getBotByClassName("Claude3OpusBot"),
     bots.getBotByClassName("GeminiAPIBot"),
     bots.getBotByClassName("QwenBot"),
     bots.getBotByClassName("MinimaxBot"),
