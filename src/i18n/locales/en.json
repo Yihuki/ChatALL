@@ -268,6 +268,10 @@
     "ERNIE-Bot-turbo": "ERNIE-Bot-turbo",
     "ERNIE-Bot-4": "ERNIE-Bot-4"
   },
+  "wenxin": {
+    "name": "Baidu Wenxin",
+    "ERNIE-40-8K": "ERNIE-4.0-8K"
+  },
   "youChat": {
     "name": "YouChat"
   },

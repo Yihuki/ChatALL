@@ -1,4 +1,4 @@
-import LangChainBot from "../LangChainBot";
+import LangChainBot from "../LangChainBotv2";
 import store from "@/store";
 import { ChatGroq } from "@langchain/groq";
 

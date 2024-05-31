@@ -204,6 +204,10 @@
     "apiSecret": "API Secret",
     "appid": "appid"
   },
+  "Wenxin": {
+    "apiKey": "API Key",
+    "SecretKey": "API SecretKey"
+  },
   "Zhipu":{
     "apiKey": "API 密钥",
     "name": "智谱清言"
@@ -300,6 +304,11 @@
     "ERNIE-Bot": "ERNIE-Bot",
     "ERNIE-Bot-turbo": "ERNIE-Bot-turbo",
     "ERNIE-Bot-4": "ERNIE-Bot-4"
+  },
+  "wenxin": {
+    "name": "百度文心",
+    "ERNIE-40-8K": "ERNIE-4.0-8K",
+    "temperature": "Temperature"
   },
   "youChat": {
     "name": "YouChat"
