@@ -234,6 +234,12 @@
     "found": "找到了第 {num} 篇资料：",
     "searching": "搜索中..."
   },
+  "moonshot": {
+    "name": "月之暗面",
+    "moonshot-v1-8k": "moonshot-v1-8k",
+    "apiKey": "API Key",
+    "temperature": "Temperature"
+  },
   "lmsys": {
     "name": "LMSYS",
     "vicuna-7b": "vicuna-7b",

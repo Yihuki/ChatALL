@@ -110,6 +110,7 @@ import WenxinBotSettings from "@/components/BotSettings/WenxinBotSettings.vue";
 import { resolveTheme, applyTheme, Mode } from "../theme";
 import ClaudeAPIBotSettings from "./BotSettings/ClaudeAPIBotSettings.vue";
 import GroqAPIBotSettings from "./BotSettings/GroqAPIBotSettings.vue";
+import MoonshotAPIBotSettings from "./BotSettings/MoonshotAPIBotSettings.vue";
 
 const { ipcRenderer } = window.require("electron");
 const { t: $t, locale } = useI18n();
@@ -131,6 +132,7 @@ const botSettings = [
   { brand: "claudeApi", component: ClaudeAPIBotSettings },
   { brand: "groqApi", component: GroqAPIBotSettings },
   { brand: "wenxin", component: WenxinBotSettings },
+  { brand: "moonshot", component: MoonshotAPIBotSettings },
 ];
 
 const proxy = ProxySettings;

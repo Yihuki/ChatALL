@@ -28,6 +28,7 @@ export default class MinimaxBot extends LangChainBot {
       modelName: this.constructor._model ? this.constructor._model : "",
       minimaxGroupId: store.state.minimax.GroupId,
       minimaxApiKey: store.state.minimax.apiKey,
+      tokensToGenerate: 2048,
       streaming: true,
       botSetting: [
         {

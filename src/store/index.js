@@ -152,6 +152,11 @@ export default createStore({
       temperature: 0.95,
       pastRounds: 5,
     },
+    moonshot: {
+      apiKey: "",
+      temperature: 0.3,
+      pastRounds: 5,
+    },
     currentChatIndex: 0,
     updateCounter: 0,
     theme: undefined,

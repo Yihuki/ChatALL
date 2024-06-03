@@ -53,7 +53,7 @@ export default class LangChainBot extends Bot {
       },
     ];
     model.callbacks = callbacks;
-    await model.call(messages);
+    await model.invoke(messages);
     await bufferMemory.chatHistory.addAIChatMessage(res);
     // Serialize the messages before storing
     messages = messages.map((item) => JSON.stringify(item.toDict()));

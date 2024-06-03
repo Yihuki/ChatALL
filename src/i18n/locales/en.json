@@ -199,6 +199,12 @@
     "found": "Found {num}: ",
     "searching": "Searching..."
   },
+  "moonshot": {
+    "name": "moonshot",
+    "moonshot-v1-8k": "moonshot-v1-8k",
+    "apiKey": "API Key",
+    "temperature": "Temperature"
+  },
   "lmsys": {
     "name": "LMSYS",
     "vicuna-7b": "vicuna-7b",
