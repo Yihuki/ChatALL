@@ -2,12 +2,14 @@
 
 import { BrowserWindow, app, ipcMain, nativeTheme, protocol } from "electron";
 import { createProtocol } from "vue-cli-plugin-electron-builder/lib";
-import installExtension, { VUEJS3_DEVTOOLS } from "electron-devtools-installer";
+import installExtension from "electron-devtools-installer";
 import fs from "fs";
 import path from "path";
 import { setMenuItems } from "./menu";
 import updateApp from "./update";
 const isDevelopment = process.env.NODE_ENV !== "production";
+
+const allowedDomains = ["aliyun.com", "qianwen.aliyun.com"];
 
 const DEFAULT_USER_AGENT = ""; // Empty string to use the Electron default
 /** @type {BrowserWindow} */
@@ -191,10 +193,7 @@ async function createWindow() {
             newCookie.domain = cookie.domain;
           }
           // Handle the session cookie for QianWen
-          if (
-            cookie.domain.startsWith(".aliyun.com") ||
-            cookie.domain.startsWith("qianwen.aliyun.com")
-          ) {
+          if (isAllowedDomain(cookie.domain)) {
             newCookie.expirationDate = setCookieExpireDate(7);
           }
           await win.webContents.session.cookies.set(newCookie);
@@ -204,6 +203,22 @@ async function createWindow() {
       }
     },
   );
+
+  function isAllowedDomain(domain) {
+    try {
+      const parsedHost = new URL(
+        `https://${domain.startsWith(".") ? domain.substring(1) : domain}`,
+      ).host;
+      return allowedDomains.some(
+        (allowedDomain) =>
+          parsedHost === allowedDomain ||
+          parsedHost.endsWith(`.${allowedDomain}`),
+      );
+    } catch (error) {
+      console.error("Error parsing domain in isAllowedDomain:", domain, error);
+      return false;
+    }
+  }
 
   // Modify the Referer header for each request and special patch for some sites.
   win.webContents.session.webRequest.onBeforeSendHeaders(
@@ -439,7 +454,7 @@ app.on("ready", async () => {
   if (isDevelopment && !process.env.IS_TEST) {
     // Install Vue Devtools
     try {
-      await installExtension(VUEJS3_DEVTOOLS);
+      await installExtension("nhdogjmejiglipccpnnnanhbledajbpd");
     } catch (e) {
       console.error("Vue Devtools failed to install:", e.toString());
     }
