@@ -2,7 +2,7 @@ import LangChainBot from "@/bots/LangChainBot";
 import store from "@/store";
 import { ChatOpenAI } from "@langchain/openai";
 
-export default class Claude3OpenAIAPIBot extends LangChainBot {
+export default class ClaudeOpenAIAPIBot extends LangChainBot {
   static _brandId = "claudeApi";
   static _className = "ClaudeAPIBot";
 

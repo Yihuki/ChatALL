@@ -10,9 +10,7 @@ import MinimaxBot from "@/bots/MinimaxBot";
 import XinghuoBot from "@/bots/XinghuoBot";
 import ZhipuBot from "@/bots/ZhipuBot";
 import WenxinBot from "./WenxinBot";
-import Claude3HaikuOpenAIAPIBot from "./claudeopenai/Claude3HaikuOpenAIAPIBot";
-import Claude3SonnetOpenAIAPIBot from "./claudeopenai/Claude3SonnetOpenAIAPIBot";
-import Claude3OpusOpenAIAPIBot from "./claudeopenai/Claude3OpusOpenAIAPIBot";
+import Claude35SonnetOpenAIAPIBot from "./claudeopenai/Claude35SonnetOpenAIAPIBot";
 import MoonshotAPIBot from "./moonshot/MoonshotAPIBot";
 
 const all = [
@@ -20,9 +18,7 @@ const all = [
   OpenAIAPI4Bot.getInstance(),
   OpenAIAPI4oBot.getInstance(),
   Llama370bGroqAPIBot.getInstance(),
-  Claude3HaikuOpenAIAPIBot.getInstance(),
-  Claude3SonnetOpenAIAPIBot.getInstance(),
-  Claude3OpusOpenAIAPIBot.getInstance(),
+  Claude35SonnetOpenAIAPIBot.getInstance(),
   MoonshotAPIBot.getInstance(),
   GeminiAPIBot.getInstance(),
   QwenBot.getInstance(),
@@ -66,9 +62,7 @@ export const botTags = {
     bots.getBotByClassName("OpenAIAPI4Bot"),
     bots.getBotByClassName("OpenAIAPI4oBot"),
     bots.getBotByClassName("Llama370bGroqAPIBot"),
-    bots.getBotByClassName("Claude3HaikuOpenAIAPIBot"),
-    bots.getBotByClassName("Claude3SonnetOpenAIAPIBot"),
-    bots.getBotByClassName("Claude3OpusOpenAIAPIBot"),
+    bots.getBotByClassName("Claude35SonnetOpenAIAPIBot"),
     bots.getBotByClassName("MoonshotAPIBot"),
     bots.getBotByClassName("GeminiAPIBot"),
     bots.getBotByClassName("QwenBot"),
