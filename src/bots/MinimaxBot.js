@@ -6,7 +6,7 @@ export default class MinimaxBot extends LangChainBot {
   static _brandId = "minimax";
   static _className = "MinimaxBot";
   static _logoFilename = "minimax.png"; // Place it in public/bots/
-  static _model = "abab6-chat";
+  static _model = "abab6.5s-chat";
 
   constructor() {
     super();

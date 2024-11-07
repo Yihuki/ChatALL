@@ -6,7 +6,7 @@ export default class XinghuoBot extends LangChainBot {
   static _brandId = "xinghuo";
   static _className = "XinghuoBot";
   static _logoFilename = "spark-logo.png"; // Place it in public/bots/
-  static _model = "spark-3.5";
+  static _model = "spark-4.0";
 
   constructor() {
     super();
@@ -24,13 +24,13 @@ export default class XinghuoBot extends LangChainBot {
 
   _setupModel() {
     const chatModel = new ChatIflytekXinghuo({
-      domain: "generalv3.5",
+      domain: "4.0Ultra",
       iflytekAppid: store.state.xinghuo.appid,
       temperature: store.state.xinghuo.temperature,
       iflytekApiKey: store.state.xinghuo.apiKey,
       iflytekApiSecret: store.state.xinghuo.apiSecret,
       streaming: true,
-      version: "v3.5",
+      version: "v4.0",
     });
     return chatModel;
   }

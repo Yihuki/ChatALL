@@ -53,6 +53,11 @@ export default createStore({
       pastRounds: 5,
       alterUrl: "",
     },
+    deepseekApi: {
+      apiKey: "",
+      temperature: 1,
+      pastRounds: 5,
+    },
     azureOpenaiApi: {
       azureApiKey: "",
       temperature: 1,

@@ -129,8 +129,7 @@
     "name": "Claude API",
     "claude-3-5-sonnet-20240620": "claude-3.5-sonnet",
     "claude-21": "claude-2.1",
-    "claude-20": "claude-2.0",
-    "claude-instant-12": "claude-instant"
+    "claude-20": "claude-2.0"
   },
   "cohereApi": {
     "name": "Cohere API",
@@ -164,7 +163,7 @@
   "geminiApi": {
     "name": "Gemini API",
     "gemini-pro": "Gemini-Pro",
-    "gemini-15-pro-latest": "Gemini 1.5 Pro",
+    "gemini-15-pro-002": "Gemini 1.5 Pro 002",
     "gemini-15-flash-latest": "Gemini 1.5 Flash",
     "topK": "topK",
     "topKPrompt": "A topK of 1 means the selected token is the most probable among all the tokens in the model's vocabulary (also called greedy decoding)",
@@ -214,7 +213,6 @@
     "chatglm2-6b": "chatglm2-6b",
     "chatglm3-6b": "chatglm3-6b",
     "alpaca-13b": "alpaca-13b",
-    "claude-1": "claude-1",
     "wizardlm-13b": "WizardLM-13B",
     "wizardlm-70b": "WizardLM-70B",
     "codellama-34b-instruct": "Code Llama",
@@ -248,9 +246,6 @@
   },
   "poe": {
     "name": "Poe",
-    "a2": "Claude-instant",
-    "a2_100k": "Claude-instant-100k",
-    "a2_2": "Claude-2-100k",
     "beaver": "GPT-4",
     "capybara": "Assistant",
     "chinchilla": "ChatGPT 3.5",
@@ -317,7 +312,8 @@
     "llama3-70b-8192": "Llama 3 70b",
     "mixtral-8x7b-32768": "Mixtral 8x7b",
     "gemma-7b-it": "Gemma 7b",
-    "gemma2-9b-it": "Gemma2 9b"
+    "gemma2-9b-it": "Gemma2 9b", 
+    "llama-32-90b-text-preview": "Llama 3.2 90b"
   },
   "updates": {
     "updateAvailable": "Update Available!",

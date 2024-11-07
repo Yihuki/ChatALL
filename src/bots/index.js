@@ -11,6 +11,7 @@ import XinghuoBot from "@/bots/XinghuoBot";
 import ZhipuBot from "@/bots/ZhipuBot";
 import WenxinBot from "./WenxinBot";
 import Claude35SonnetOpenAIAPIBot from "./claudeopenai/Claude35SonnetOpenAIAPIBot";
+import Deepseek25OpenAIAPIBot from "./deepseek/Deepseek25OpenAIAPIBot";
 import MoonshotAPIBot from "./moonshot/MoonshotAPIBot";
 
 const all = [
@@ -19,6 +20,7 @@ const all = [
   OpenAIAPI4oBot.getInstance(),
   Llama370bGroqAPIBot.getInstance(),
   Claude35SonnetOpenAIAPIBot.getInstance(),
+  Deepseek25OpenAIAPIBot.getInstance(),
   MoonshotAPIBot.getInstance(),
   GeminiAPIBot.getInstance(),
   QwenBot.getInstance(),
@@ -29,7 +31,6 @@ const all = [
 ];
 
 const disabled = [
-  "ClaudeBot",
   "AlpacaBot",
   "HuggingChatBot",
   "Falcon180bBot",
@@ -63,6 +64,7 @@ export const botTags = {
     bots.getBotByClassName("OpenAIAPI4oBot"),
     bots.getBotByClassName("Llama370bGroqAPIBot"),
     bots.getBotByClassName("Claude35SonnetOpenAIAPIBot"),
+    bots.getBotByClassName("Deepseek25OpenAIAPIBot"),
     bots.getBotByClassName("MoonshotAPIBot"),
     bots.getBotByClassName("GeminiAPIBot"),
     bots.getBotByClassName("QwenBot"),

@@ -106,6 +106,7 @@ import MinimaxBotSettings from "@/components/BotSettings/MinimaxBotSettings.vue"
 import XinghuoBotSettings from "@/components/BotSettings/XinghuoBotSettings.vue";
 import ZhipuBotSettings from "@/components/BotSettings/ZhipuBotSettings.vue";
 import WenxinBotSettings from "@/components/BotSettings/WenxinBotSettings.vue";
+import DeepseekBotSettings from "./BotSettings/DeepseekBotSettings.vue";
 
 import { resolveTheme, applyTheme, Mode } from "../theme";
 import ClaudeAPIBotSettings from "./BotSettings/ClaudeAPIBotSettings.vue";
@@ -133,6 +134,7 @@ const botSettings = [
   { brand: "groqApi", component: GroqAPIBotSettings },
   { brand: "wenxin", component: WenxinBotSettings },
   { brand: "moonshot", component: MoonshotAPIBotSettings },
+  { brand: "deepseek", component: DeepseekBotSettings },
 ];
 
 const proxy = ProxySettings;
