@@ -125,7 +125,7 @@
     "gemini-pro": "Gemini",
     "gemini-ultra": "Gemini Advanced"
   },
-  "claudeApi":{
+  "claudeApi": {
     "name": "Claude API",
     "claude-3-5-sonnet-20240620": "claude-3.5-sonnet",
     "claude-21":"claude-2.1",

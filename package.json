@@ -31,7 +31,7 @@
     "@kangc/v-md-editor": "^2.3.16",
     "@langchain/anthropic": "^0.2.3",
     "@langchain/cohere": "^0.0.11",
-    "@langchain/community": "^0.3.7",
+    "@langchain/community": "^0.3.16",
     "@langchain/core": "^0.3.13",
     "@langchain/google-genai": "^0.0.21",
     "@langchain/groq": "^0.1.2",
@@ -52,7 +52,7 @@
     "jsonwebtoken": "^9.0.2",
     "jszip": "^3.10.1",
     "katex": "^0.16.11",
-    "langchain": "^0.2.4",
+    "langchain": "^0.3.5",
     "localforage": "^1.10.0",
     "material-design-icons": "^3.0.1",
     "prismjs": "^1.29.0",
@@ -62,7 +62,7 @@
     "stream-browserify": "^3.0.0",
     "update-electron-app": "^3.0.0",
     "util": "^0.12.5",
-    "uuid": "^10.0.0",
+    "uuid": "^11.0.3",
     "vm-browserify": "^1.1.2",
     "vue": "^3.4.31",
     "vue-cli-plugin-electron-builder": "^3.0.0-alpha.4",
@@ -82,7 +82,7 @@
     "@vue/cli-plugin-babel": "~5.0.8",
     "@vue/cli-plugin-eslint": "~5.0.8",
     "@vue/cli-service": "~5.0.8",
-    "electron": "^31.7.1",
+    "electron": "^33.2.0",
     "electron-devtools-installer": "^3.2.0",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
@@ -124,9 +124,9 @@
   ],
   "license": "Apache-2.0",
   "overrides": {
-    "@langchain/core": "~0.2.12",
+    "@langchain/core": "~0.2.36",
     "vue-cli-plugin-electron-builder": {
-      "electron-builder": "^25.0.5"
+      "electron-builder": "^25.1.8"
     }
   }
 }
