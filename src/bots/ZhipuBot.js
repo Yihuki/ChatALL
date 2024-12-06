@@ -7,7 +7,7 @@ export default class ZhipuBot extends LangChainBot {
   static _brandId = "zhipu";
   static _className = "ZhipuBot";
   static _logoFilename = "chatglm-4-logo.png"; // Place it in public/bots/
-  static _model = "glm-4";
+  static _model = "glm-4-Plus";
 
   constructor() {
     super();

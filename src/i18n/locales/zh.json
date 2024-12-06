@@ -212,7 +212,8 @@
   },
   "deepseek":{
     "apiKey": "API 密钥",
-    "name": "deepseek"
+    "name": "deepseek",
+    "deepseek-chat": "deepseek-chat"
   },
   "huggingChat": {
     "name": "HuggingChat",
@@ -300,7 +301,7 @@
   },
   "zhipu": {
     "name": "智谱清言",
-    "glm-4": "GLM-4",
+    "glm-4-Plus": "glm-4-Plus",
     "temperature": "Temperature"
   },
   "wenxinQianfan": {

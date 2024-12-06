@@ -53,7 +53,7 @@ export default createStore({
       pastRounds: 5,
       alterUrl: "",
     },
-    deepseekApi: {
+    deepseek: {
       apiKey: "",
       temperature: 1,
       pastRounds: 5,
